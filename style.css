@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e8b57;  
+    padding: 20px;
+}
+
+header .logo img {
+    height: 50px; 
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1c6f43; 
+}
+
+
+section {
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section h1, section h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #2e8b57;
+}
+
+#inicio {
+    background-color: #fff;
+}
+
+#productos {
+    background-color: #eaf2f1;
+}
+
+#quienes-somos {
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-item {
+    max-width: 250px;
+}
+
+.footer-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-item p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer p {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+.productos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    color: #2e8b57;
+    margin-top: 10px;
+}
+
+.producto p {
+    margin-top: 10px;
+    color: #555;
+}
+
+.producto strong {
+    font-size: 1.2em;
+    color: #2e8b57;
+}
+
+
+form {
+    display: grid;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+h1, h2 {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .productos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo img {
+        height: 40px; 
+    }
+}
